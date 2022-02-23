@@ -5,7 +5,7 @@ import flixel.FlxSprite;
 import flixel.math.FlxRandom;
 import flixel.util.FlxSpriteUtil;
 
-class ScrennsaverHero extends FlxSprite
+class ScreensaverHero extends FlxSprite
 {
 	public var direction:Int;
 
@@ -74,7 +74,7 @@ class ScrennsaverHero extends FlxSprite
 		{
 			this.x = 1000;
 		}
-		else if (this.x >= 1000)
+		else if (this.x >= FlxG.width)
 		{
 			this.x = 0;
 		}
@@ -82,7 +82,7 @@ class ScrennsaverHero extends FlxSprite
 		{
 			this.y = 500;
 		}
-		else if (this.y >= 500)
+		else if (this.y >= FlxG.height)
 		{
 			this.y = 0;
 		}
