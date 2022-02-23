@@ -1,5 +1,6 @@
 package;
 
+import ScreensaverHero.ScrennsaverHero;
 import flixel.FlxObject;
 import flixel.FlxState;
 import flixel.text.FlxText;
@@ -17,6 +18,14 @@ class PlayState extends FlxState
 		hellowWorld.angle = 54;
 		hellowWorld.color = 0xff0000;
 		add(hellowWorld);
+		var screensaverHero = new ScrennsaverHero(200, 200);
+		var screensaverHero1 = new ScrennsaverHero(100, 100);
+		var screensaverHero2 = new ScrennsaverHero(100, 100);
+		var screensaverHero3 = new ScrennsaverHero(100, 100);
+		add(screensaverHero);
+		add(screensaverHero1);
+		add(screensaverHero2);
+		add(screensaverHero3);
 	}
 
 	override public function update(elapsed:Float)
